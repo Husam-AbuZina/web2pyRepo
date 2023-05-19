@@ -1,0 +1,26 @@
+{{extend 'layout.html'}}
+
+
+
+{{=form}}
+
+  <div class="col-lg-6 ">
+                        <div class="card2 card border-0 px-4 py-5">
+                            <div class="row mb-4 px-3">
+                                <h1 class="mb-0 mr-1 mt-2 text-capitalize">add course </h1>
+                            </div>
+ <form class="text-capitalize" action='insertCourses'  method="POST" >
+  <div class="mb-3">
+    <label for="exampleInputtext" class="form-label">course code</label>
+    <input type="text" class="form-control" name="courseCode" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputtext" class="form-label">course name</label>
+    <input type="text" class="form-control" name="courseName" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">course description</label>
+  <textarea class="form-control" name="courseDescription"  rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary text-capitalize">add course</button>
+</form> 
